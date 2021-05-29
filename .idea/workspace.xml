@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a296ac2-717d-4451-b1be-c6c8de11bb7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/users/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Class/app/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Class/app/Models/Model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Class/resources/views/ActualizarNotas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Class/resources/views/ActualizarNotas.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Class/resources/views/IngresarNotas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Class/resources/views/IngresarNotas.blade.php" afterDir="false" />
@@ -16,6 +25,17 @@
       <change beforePath="$PROJECT_DIR$/../ExamenMC/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExamenMC/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlataformaVirtual" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PlataformaVirtual - copia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actions/Fortify/CreateNewUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/FortifyServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/FortifyServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fortify.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/fortify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProyectoClases/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProyectoClases/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProyectoClases/.gitattributes" beforeDir="false" />
@@ -358,7 +378,9 @@
       <workItem from="1621986047229" duration="622000" />
       <workItem from="1622011840224" duration="2693000" />
       <workItem from="1622015250373" duration="2524000" />
-      <workItem from="1622095638650" duration="6977000" />
+      <workItem from="1622095638650" duration="13387000" />
+      <workItem from="1622141020286" duration="21163000" />
+      <workItem from="1622267798270" duration="6492000" />
     </task>
     <servers />
   </component>
