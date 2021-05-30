@@ -24,6 +24,7 @@
             <b class="caret"></b>
           </p>
         </a>
+          {{--
         <div class="collapse show" id="laravelExample">
           <ul class="nav">
             <li class="nav-item{{ $activePage == 'profile' ? ' active' : '' }}">
@@ -40,29 +41,30 @@
             </li>
           </ul>
         </div>
+        --}}
       </li>
       <li class="nav-item{{ $activePage == 'users' ? ' active' : '' }}">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{route('users.index')}}">
           <i class="material-icons">content_paste</i>
             <p>Usuarios</p>
         </a>
       </li>
+        <li class="nav-item{{ $activePage == 'permissions' ? ' active' : '' }}">
+            <a class="nav-link" href="{{ route('permissions.index') }}">
+                <i class="material-icons">bubble_chart</i>
+                <p>{{ __('Permisos') }}</p>
+            </a>
+        </li>
+        <li class="nav-item{{ $activePage == 'roles' ? ' active' : '' }}">
+            <a class="nav-link" href="{{ route('roles.index') }}">
+                <i class="material-icons">location_ons</i>
+                <p>{{ __('Roles') }}</p>
+            </a>
+        </li>
       <li class="nav-item{{ $activePage == 'typography' ? ' active' : '' }}">
         <a class="nav-link" href="#">
           <i class="material-icons">library_books</i>
-            <p>{{ __('Typography') }}</p>
-        </a>
-      </li>
-      <li class="nav-item{{ $activePage == 'icons' ? ' active' : '' }}">
-        <a class="nav-link" href="#">
-          <i class="material-icons">bubble_chart</i>
-          <p>{{ __('Icons') }}</p>
-        </a>
-      </li>
-      <li class="nav-item{{ $activePage == 'map' ? ' active' : '' }}">
-        <a class="nav-link" href="#">
-          <i class="material-icons">location_ons</i>
-            <p>{{ __('Maps') }}</p>
+            <p>{{ __('Cursos') }}</p>
         </a>
       </li>
       <li class="nav-item{{ $activePage == 'notifications' ? ' active' : '' }}">

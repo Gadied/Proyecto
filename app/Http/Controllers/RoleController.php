@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
-class PermissionController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +15,8 @@ class PermissionController extends Controller
      */
     public function index()
     {
-        $permissions = Permission::paginate(5);
-        return view('permissions.index', compact('permissions'));
+        $roles = Role::paginate(10);
+        return view('roles.index', compact('roles'));
     }
 
     /**
@@ -25,7 +26,8 @@ class PermissionController extends Controller
      */
     public function create()
     {
-        return view('permissions.create');
+        $permissions = Permission::all()->pluck('name', 'id');
+        return view('roles.create' , compact('permissions'));
     }
 
     /**
@@ -36,8 +38,9 @@ class PermissionController extends Controller
      */
     public function store(Request $request)
     {
-        Permission::create($request->only('name'));
-        return redirect()->route('permissions.index');
+        $role = Role::create($request->only('name'));
+        $role->permissions()->sync($request->input('permissions', []));
+        return redirect()->route('roles.index');
     }
 
     /**
@@ -46,9 +49,10 @@ class PermissionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Permission $permission)
+    public function show(Role $role)
     {
-        return view('permissions.show', compact('permission'));
+        $role->load('permissions');
+        return view('roles.show', compact('role'));
     }
 
     /**
@@ -57,9 +61,11 @@ class PermissionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Permission $permission)
+    public function edit(Role $role)
     {
-        return view('permissions.edit', compact('permission'));
+        $permissions = Permission::all()->pluck('name', 'id');
+        $role->load('permissions');
+        return view('roles.edit', compact('role', 'permissions'));
     }
 
     /**
@@ -69,10 +75,11 @@ class PermissionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Permission $permission)
+    public function update(Request $request, Role $role)
     {
-        $permission->update($request->only('name'));
-        return redirect()->route('permissions.index');
+        $role->update($request->only('name'));
+        $role->permissions()->sync($request->input('permissions', []));
+        return redirect()->route('roles.index');
     }
 
     /**
@@ -81,9 +88,9 @@ class PermissionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Permission $permission)
+    public function destroy(Role $role)
     {
-        $permission->delete();
-        return redirect()->route('permissions.index');
+        $role->delete();
+        return redirect()->route('roles.index');
     }
 }
