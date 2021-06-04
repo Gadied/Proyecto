@@ -22,8 +22,10 @@
                                 </a>
                             </div>
                         </div>
+
                         <div class="card-body ">
                             <p class="card-description text-center">{{ __('Or Be Classical') }}</p>
+
                             <div class="bmd-form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -57,6 +59,7 @@
                                     </div>
                                 @endif
                             </div>
+
                             <div class="bmd-form-group{{ $errors->has('email') ? ' has-danger' : '' }} mt-3">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -73,6 +76,29 @@
                                     </div>
                                 @endif
                             </div>
+
+
+
+
+                            <div class="bmd-form-group{{ $errors->has('tipo') ? ' has-danger' : '' }} mt-3">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="material-icons">fingerprint</i>
+                                    </span>
+                                    </div>
+                                    <input type="text" name="type" class="form-control" placeholder="{{ __('Tipo...') }}"
+                                           value="{{ old('tipo') }}" required autocomplete="tipo">
+                                </div>
+                                @if ($errors->has('tipo'))
+                                    <div id="type-error" class="error text-danger pl-3" for="tipo" style="display: block;">
+                                        <strong>{{ $errors->first('tipo') }}</strong>
+                                    </div>
+                                @endif
+                            </div>
+
+
+
                             <div class="bmd-form-group{{ $errors->has('password') ? ' has-danger' : '' }} mt-3">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -90,6 +116,7 @@
                                     </div>
                                 @endif
                             </div>
+
                             <div
                                 class="bmd-form-group{{ $errors->has('password_confirmation') ? ' has-danger' : '' }} mt-3">
                                 <div class="input-group">
@@ -108,6 +135,7 @@
                                     </div>
                                 @endif
                             </div>
+
                             {{-- <div class="form-check mr-auto ml-3 mt-3">
                                 <label class="form-check-label">
                                     <input class="form-check-input" type="checkbox" id="policy" name="policy"
@@ -119,6 +147,7 @@
                                 </label>
                             </div> --}}
                         </div>
+
                         <div class="card-footer justify-content-center">
                             <button type="submit"
                                     class="btn btn-primary btn-link btn-lg">{{ __('Create account') }}</button>

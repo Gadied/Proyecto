@@ -28,6 +28,7 @@
                                             <th>ID</th>
                                             <th>Nombre</th>
                                             <th>Correo</th>
+                                            <th>Tipo</th>
                                             <th>Username</th>
                                             <th>Created_at</th>
                                             <th class="text-right">Acciones</th>
@@ -38,6 +39,7 @@
                                                     <td>{{ $user->id }}</td>
                                                     <td>{{ $user->name }}</td>
                                                     <td>{{ $user->email }}</td>
+                                                    <td>{{ $user->tipo}}</td>
                                                     <td>{{ $user->username }}</td>
                                                     <td>{{ $user->created_at }}</td>
                                                     <td class="td-actions text-right">

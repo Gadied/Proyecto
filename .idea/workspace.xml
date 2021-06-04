@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a296ac2-717d-4451-b1be-c6c8de11bb7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/permissions/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/permissions/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/permissions/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/permissions/show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/roles/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/alumnos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/docentes.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Class/app/Models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Class/app/Models/Model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Class/resources/views/ActualizarNotas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Class/resources/views/ActualizarNotas.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Class/resources/views/IngresarNotas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Class/resources/views/IngresarNotas.blade.php" afterDir="false" />
@@ -26,14 +20,17 @@
       <change beforePath="$PROJECT_DIR$/../PlataformaVirtual - copia" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PermissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_26_082855_create_permission_tables.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_26_082855_create_permission_tables.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_29_072940_create_permission_tables.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbars/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbars/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/TiposUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/TiposUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProyectoClases/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ProyectoClases/.env.example" beforeDir="false" />
@@ -365,6 +362,11 @@
       <recent name="C:\laragon\www\Proyecto\resources\views\roles" />
       <recent name="C:\laragon\www\Proyecto\database\migrations" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\Proyecto\resources\views\userdocentes" />
+      <recent name="C:\laragon\www\Proyecto\resources\views\alumnos" />
+      <recent name="C:\laragon\www\Proyecto\resources\views\docentes" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -388,7 +390,10 @@
       <workItem from="1622141020286" duration="21163000" />
       <workItem from="1622267798270" duration="10029000" />
       <workItem from="1622355092186" duration="10381000" />
-      <workItem from="1622400998198" duration="4540000" />
+      <workItem from="1622400998198" duration="14389000" />
+      <workItem from="1622451816843" duration="591000" />
+      <workItem from="1622500938468" duration="17024000" />
+      <workItem from="1622533600684" duration="485000" />
     </task>
     <servers />
   </component>

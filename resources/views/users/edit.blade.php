@@ -40,6 +40,17 @@
                                         @endif
                                     </div>
                                 </div>
+
+                                <div class="row">
+                                    <label for="tipo" class="col-sm-2 col-form-label">Tipo</label>
+                                    <div class="col-sm-7">
+                                        <input type="tipo" class="form-control" name="tipo" value="{{ old('tipo', $user->tipo) }}">
+                                        @if ($errors->has('tipo'))
+                                            <span class="error text-danger" for="input-tipo">{{ $errors->first('tipo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
                                 <div class="row">
                                     <label for="password" class="col-sm-2 col-form-label">Contraseña</label>
                                     <div class="col-sm-7">
@@ -53,6 +64,11 @@
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
                                 <button type="submit" class="btn btn-primary">Actualizar</button>
+                            </div>
+                            <div class="card-footer">
+                                <div class="button-container">
+                                    <a href="{{ route('users.index') }}" class="btn btn-sm btn-success mr-3"> Volver </a>
+                                </div>
                             </div>
                             <!--End footer-->
                         </div>

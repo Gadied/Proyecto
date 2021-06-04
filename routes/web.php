@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DocentesController;
+use App\Http\Controllers\AlumnosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +32,12 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('permissions', App\Http\Controllers\PermissionController::class);
     Route::resource('roles', App\Http\Controllers\RoleController::class);
+
+    Route::get('/alumnos', [App\Http\Controllers\AlumnosController::class, 'index'])->name('alumnos');
+    Route::get('/docentes', [App\Http\Controllers\DocentesController::class, 'index'])->name('docentes');
+
+    Route::get('/usersdocentes', [App\Http\Controllers\UserController::class, 'index'])->name('usersdocentes.index');
+
 });
+
+

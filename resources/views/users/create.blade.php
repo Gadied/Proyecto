@@ -48,6 +48,17 @@
                                         @endif
                                     </div>
                                 </div>
+
+                                <div class="row">
+                                    <label for="tipo" class="col-sm-2 col-form-label">Tipo</label>
+                                    <div class="col-sm-7">
+                                        <input type="tipo" class="form-control" name="tipo" placeholder="Tipo" value="{{ old('tipo') }}">
+                                        @if ($errors->has('tipo'))
+                                            <span class="error text-danger" for="input-tipo">{{ $errors->first('tipo') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+
                                 <div class="row">
                                     <label for="password" class="col-sm-2 col-form-label">Contraseña</label>
                                     <div class="col-sm-7">
